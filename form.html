@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+    <title> Dejanos tus datos! </title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    
+    <main>
+        <h2>Carga tus datos y nosotros nos comunicamos con vos!</h2>
+        <form action="/registro" method="post">
+            <h3>Tus datos:</h3>
+            <div>
+                <label>Nombre</label>
+                <input name="nombre" id="nombre" required>
+            </div>
+            <div>
+                <label>Apellido</label>
+                <input name="apellido" id="apellido" required>
+            </div>
+            <div>
+                <label>DNI</label>
+                <input name="dni" id="dni" required>
+            </div>
+            <div>
+                <label>Email</label>
+                <input name="email" id="email" required>
+            </div>
+            <div>
+                <label>Telefono</label>
+                <input name="telefono" id="telefono" required>
+            </div>
+            <hr>
+            <div>
+                <h3>Asegurate con nosotros</h3>
+                <label>Qué cobertura buscás?</label>
+                <select>
+                    <option name="basico" id="basico">Basico</option>
+                    <option name="intermedio" id="intermedio">Intermedio</option>
+                    <option name="premium" id="premium">Premium</option>
+                </select>
+            </div>
+            <div>
+                <label>Costo aproximado:</label><label id="precio">$...</label>
+            </div>
+            <br>
+            <button action="submit">Enviar</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <section class="copyright">
+            <p>Copyright © 1888-2023 SeGuroS NoPaGAMOS</p>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "clase1",
+  "version": "1.0.0",
+  "description": "clase1",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run app.js"
+  },
+  "author": "Ramiro R.Romero",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

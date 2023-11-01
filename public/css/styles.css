@@ -1,0 +1,22 @@
+main{
+    background:black;
+    text-align: center;
+    color:white;
+    padding: 20px;
+    width: 100%;
+}
+h2{
+    background:rgb(91, 103, 104);
+}
+footer{
+    background:black;
+    align-self: baseline;
+    text-align: center;
+    color: #667;
+    padding: 20px;
+    width: 100%;
+}
+
+.copyright{
+    padding-top: 15px;
+}
