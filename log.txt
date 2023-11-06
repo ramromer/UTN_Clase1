@@ -1,1 +1,16 @@
-[object Object] /n
+{
+  "nombre": "UN",
+  "apellido": "CLIENTE",
+  "dni": "12345678",
+  "email": "Falso@falso.com",
+  "telefono": "1234567",
+  "cobertura": "Premium"
+}
+{
+  "nombre": "213",
+  "apellido": "erwq",
+  "dni": "eqw",
+  "email": "ewq",
+  "telefono": "123",
+  "cobertura": "Intermedio"
+}
