@@ -14,3 +14,11 @@
   "telefono": "123",
   "cobertura": "Intermedio"
 }
+{
+  "nombre": "un",
+  "apellido": "falso",
+  "dni": "123",
+  "email": "123@23.com",
+  "telefono": "123123",
+  "cobertura": "Premium"
+}
