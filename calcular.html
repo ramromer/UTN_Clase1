@@ -44,18 +44,14 @@
     </footer>
 
     <script>
-      let numA = document.getElementById("numeroA").value;
-      let numB = document.getElementById("numeroB").value;
       let select = document.getElementById("operacion");
-      console.log("numA");
-      console.log(numA);
-      console.log("numB");
-      console.log(numB);
-      let resultado = 0;
       function calcular() {
+        let resultado = 0;
+        let numA = document.getElementById("numeroA").value;
+        let numB = document.getElementById("numeroB").value;
         let selectedOption = select.options[select.selectedIndex];
         if (selectedOption.value === "sumar") {
-          resultado = numA + numB;
+          resultado = parseInt(numA) + parseInt(numB);
           document.getElementById("resultado").innerHTML = resultado;
         } else if (selectedOption.value === "restar") {
           resultado = numA - numB;
