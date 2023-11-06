@@ -19,6 +19,10 @@ app.post("/registro", (req, res) => {
   res.sendFile(__dirname + "/registro.html");
 });
 
+app.get("/calcular", (req, res) => {
+  res.sendFile(__dirname + "/calcular.html");
+});
+
 app.listen(3000, function () {
   console.log("Corriendo en localhost:3000");
 });

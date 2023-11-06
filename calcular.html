@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <title>Calculando!</title>
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+        <h3>Tus Numeros:</h3>
+        <div>
+          <label>Primer Numero</label>
+          <input name="numeroA" id="numeroA" required />
+        </div>
+        <div>
+          <label>Segundo Numero</label>
+          <input name="numeroB" id="numeroB" required />
+        </div>
+        <hr />
+        <div>
+          <label>Qué queres hacer?</label>
+          <select name="operacion" id="operacion">
+            <option name="sumar" id="sumar">sumar</option>
+            <option name="restar" id="restar">restar</option>
+            <option name="multiplicar" id="multiplicar">multiplicar</option>
+            <option name="dividir" id="dividir">dividir</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label>RESULTADO:</label> <label id="resultado">...</label>
+        </div>
+        
+    </main>
+
+    <footer>
+      <section class="copyright">
+        <p>Copyright © 1888-2023 SeGuroS NoPaGAMOS</p>
+      </section>
+    </footer>
+
+    <script>
+      let numA = document.getElementById("numeroA").value;
+      let numB = document.getElementById("numeroB").value;
+      let select = document.getElementById("operacion");
+      console.log("numA");
+      console.log(numA);
+      console.log("numB");
+      console.log(numB);
+      let resultado = 0;
+      function calcular() {
+        let selectedOption = select.options[select.selectedIndex];
+        if (selectedOption.value === "sumar") {
+          resultado = numA + numB;
+          document.getElementById("resultado").innerHTML = resultado;
+        } else if (selectedOption.value === "restar") {
+          resultado = numA - numB;
+          document.getElementById("resultado").innerHTML = resultado;
+        } else if (selectedOption.value === "multiplicar") {
+          resultado = numA * numB;
+          document.getElementById("resultado").innerHTML = resultado;
+        } else if (selectedOption.value === "dividir") {
+          resultado = numA / numB;
+          document.getElementById("resultado").innerHTML = resultado;
+        }
+      }
+
+      select.addEventListener("change", calcular);
+    </script>
+  </body>
+</html>

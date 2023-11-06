@@ -66,11 +66,11 @@
       function updatePrice() {
         let selectedOption = select.options[select.selectedIndex];
         if (selectedOption.value === "Basico") {
-          document.getElementById("precio").textContent = basico;
+          document.getElementById("precio").innerHTML = basico;
         } else if (selectedOption.value === "Intermedio") {
-          document.getElementById("precio").textContent = intermedio;
+          document.getElementById("precio").innerHTML = intermedio;
         } else if (selectedOption.value === "Premium") {
-          document.getElementById("precio").textContent = premium;
+          document.getElementById("precio").innerHTML = premium;
         }
       }
 
